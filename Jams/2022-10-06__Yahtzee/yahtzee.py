@@ -2,15 +2,15 @@
 from typing import Literal
 
 
-def score_for_chance(*dice: list[int]) -> int:
+def score_for_chance(*dice: int) -> int:
     return Yahtzee.chance(*dice)
 
 
-def score_for_yahtzee(*dice: list[int]) -> int:
+def score_for_yahtzee(*dice: int) -> int:
     return Yahtzee.yahtzee(dice)
 
 
-def score_for_number(*dice: list[int], number_to_score: Literal[1, 2, 3, 4, 5, 6]) -> int:
+def score_for_number(*dice: int, number_to_score: Literal[1, 2, 3, 4, 5, 6]) -> int:
     score_function = {
         1: Yahtzee.ones,
         2: Yahtzee.twos,
@@ -23,31 +23,31 @@ def score_for_number(*dice: list[int], number_to_score: Literal[1, 2, 3, 4, 5, 6
     return score_function(*dice)
 
 
-def score_for_pair(*dice: list[int]) -> int:
+def score_for_pair(*dice: int) -> int:
     return Yahtzee.score_pair(*dice)
 
 
-def score_for_two_pair(*dice: list[int]) -> int:
+def score_for_two_pair(*dice: int) -> int:
     return Yahtzee.two_pair(*dice)
 
 
-def score_for_three_of_a_kind(*dice: list[int]) -> int:
+def score_for_three_of_a_kind(*dice: int) -> int:
     return Yahtzee.three_of_a_kind(*dice)
 
 
-def score_for_four_of_a_kind(*dice: list[int]) -> int:
+def score_for_four_of_a_kind(*dice: int) -> int:
     return Yahtzee.four_of_a_kind(*dice)
 
 
-def score_for_small_straight(*dice: list[int]) -> int:
+def score_for_small_straight(*dice: int) -> int:
     return Yahtzee.smallStraight(*dice)
 
 
-def score_for_large_straight(*dice: list[int]) -> int:
+def score_for_large_straight(*dice: int) -> int:
     return Yahtzee.largeStraight(*dice)
 
 
-def score_for_full_house(*dice: list[int]) -> int:
+def score_for_full_house(*dice: int) -> int:
     return Yahtzee.fullHouse(*dice)
 
 

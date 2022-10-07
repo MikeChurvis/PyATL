@@ -1,5 +1,6 @@
-import yahtzee
 import unittest
+
+import yahtzee
 
 
 class TestYahtzee(unittest.TestCase):
