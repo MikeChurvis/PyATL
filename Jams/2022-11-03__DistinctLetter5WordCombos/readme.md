@@ -1,3 +1,5 @@
+https://docs.google.com/document/d/1T_jdKenPBNGxwpshCwQiQqJpl8Sp_lSXuTGVjUHRBBo/edit?usp=sharing
+
 > Create a program that outputs every combination of five 5 letter words. You must use 25 letters in the alphabet with no repeats.
 
 ## How I approach this problem
